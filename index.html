@@ -18,7 +18,7 @@ layout: default
   {% comment %} Do math on unix timstamps to process in liquid {% endcomment %}
   {% assign onemonthago = 'now' | date: '%s' | minus: 2592000 %}
   {% for update in site.updates %}
-    {% if update.categories contains 'f18' %}
+    {% if update.categories contains 'f19' %}
       {% comment %} No int filter, use benign math to coerce from string {% endcomment %}
       {% assign update_date = update.date | date: '%s' | times: 1 %}
       {% if update_date > onemonthago %}
@@ -32,7 +32,7 @@ layout: default
   <div id="old-updates" style="display: none">
 
     {% for update in site.updates %}
-      {% if update.categories contains 'f18' %}
+      {% if update.categories contains 'f19' %}
         {% comment %} No int filter, use benign math to coerce from string {% endcomment %}
         {% assign update_date = update.date | date: '%s' | times: 1 %}
         {% if update_date <= onemonthago %}
@@ -79,6 +79,8 @@ For sensitive issues, please e-mail Marcus directly.
       <td><img src="/static/img/amrith-square.jpg"  alt="Amrit Hariharan"/></td>
       <td><img src="/static/img/sltries-square.jpg"  alt="Stevie Triesenberg"/></td>
       <td><img src="/static/img/tarunsk-square.jpg"  alt="Tarun Khubchandani"/></td>
+      <td><img src="/static/img/egajda-square.jpg" alt="Esti Gajda"/></td>
+      <td><img src="/static/img/mmargin-square.jpg" alt="Maria Marginean"></td>
     </tr>
     <tr>
       <td>Marcus Darden</td>
@@ -86,6 +88,8 @@ For sensitive issues, please e-mail Marcus directly.
       <td>Amrit Hariharan</td>
       <td>Stevie Triesenberg</td>
       <td>Tarun Khubchandani</td>
+      <td>Esti Gajda</td>
+      <td>Maria Marginean</td>
     </tr>
     <tr>
       <td><a href="mailto:mmdarden@umich.edu">mmdarden@umich.edu</a></td>
@@ -93,6 +97,8 @@ For sensitive issues, please e-mail Marcus directly.
       <td><a href="mailto:amrith@umich.edu">amrith@umich.edu</a></td>
       <td><a href="mailto:sltries@umich.edu">sltries@umich.edu</a></td>
       <td><a href="mailto:tarunsk@umich.edu">tarunsk@umich.edu</a></td>
+      <td><a href="mailto:egajda@umich.edu">egajda@umich.edu</a></td>
+      <td><a href="mailto:mmargin@umich.edu">mmargin@umich.edu</a></td>
     </tr>
   </table>
 </div>
@@ -100,10 +106,9 @@ For sensitive issues, please e-mail Marcus directly.
 {% assign anchor_text="Course Resources" %}
 {% assign anchor_name="resources" %}
 {% include anchor.html %}
-<h4>Course Q&amp;A / Forum &ndash; <a href="https://piazza.com/umich/fall2018/eecs398c4csf18" target="_blank">Piazza</a></h4>
-<h4>Assignment Submission &amp; Grades &ndash; <a
-        href="https://www.gradescope.com/courses/24368" target="_blank">Gradescope</a></h4>
-<ul><li>Gradescope entry code: <code>MBBY38</code></li></ul>
+<h4>Course Q&amp;A / Forum &ndash; <a href="https://piazza.com/umich/fall2019/eecs201" target="_blank">Piazza</a></h4>
+<h4>Assignment Submission &amp; Grades &ndash; <a href="https://www.gradescope.com/courses/61550" target="_blank">Gradescope</a></h4>
+<ul><li>Gradescope entry code: <code>MRV3B8</code></li></ul>
 <!--
 <p>For most questions, please use <a href="https://piazza.com/class/ij1jghks3dr59n" target="_blank">piazza</a>
 so that all students may benefit from the question and answer. To reach the course staff, please e-mail
@@ -115,10 +120,10 @@ so that all students may benefit from the question and answer. To reach the cour
 {% assign anchor_name="times" %}
 {% include anchor.html %}
 <dl class="dl-horizontal">
-  <dt>Section 002 (26357)</dt>
-  <dd>1670 BEYSTER, Friday 2:00PM &mdash; 3:30PM</dd>
-  <dt>Section 003 (33882)</dt>
-  <dd>1013 DOW, Friday 10:30AM &mdash; 12:00PM</dd>
+  <dt>Section 001 (32191)</dt>
+  <dd>1670 BEYSTER, Wednesday 1:30PM &mdash; 3:00PM</dd>
+  <dt>Section 002 (32192)</dt>
+  <dd>1670 BEYSTER, Friday 1:30PM &mdash; 3:00PM</dd>
 </dl>
 
 <div id='calendar-loading'>Loading calendar...</div>
@@ -142,7 +147,7 @@ so that all students may benefit from the question and answer. To reach the cour
       <th style="min-width: 400px;">Lecture Materials</th>
     </tr>
     {% for week in site.syllabus %}
-      {% if week.categories contains 'f18' %}
+      {% if week.categories contains 'f19' %}
         {{ week.output }}
       {% endif %}
     {% endfor %}
@@ -210,12 +215,10 @@ that can cover missing points elsewhere.
 
 <p>There are 12 homework assignments in the course. Each homework assignment is
 worth 4 points. Any points over 40 points are worth half their value, that is
-if a student completes all 12 assignments with a perfect score, their total
-points earned from homework will be
-40&nbsp;+&nbsp;(0.5&times;8)&nbsp;=&nbsp;44.</p>
+if a student completes more than 10 assignments with a perfect score, their total
+points earned from homework will be 40&nbsp;+&nbsp;(0.5&times; Number of Additional Assignments Completed&times;4).</p>
 
-<p>Late assignments will not be accepted. Notice that one can miss/skip up to
-two assignments and still receive the full 40 homework points.</p>
+<p>Late assignments will not be accepted. Notice that one can miss some assignments and still receive the full 40 homework points.</p>
 
 <h4>Homework Effort and Grading</h4>
 
@@ -261,17 +264,14 @@ semester and vary when and how we ask questions or validate attendance.
 </p>
 
 <p>Each week can earn up to 3 attendance and participation points. Any points
-over 30 points are worth half their value, that is if a student attends and
-participates for all 12 weeks, their total points earned from attendance and
-participation will be
-30&nbsp;+&nbsp;(0.5&times;6)&nbsp;=&nbsp;33.</p>
+over 30 points are worth half their value.</p>
 
-<p>Notice that you can miss up to two weeks without any penalty. This is by
+<p>Notice that you can miss some classes without any penalty. This is by
 design to accommodate unexpected illness, emergencies, travel for interviews, or
 any other situations.
 Please do not ask for excused absences for one-off issues that are already
 covered by this policy.
-If extenuating circumstances cause you to miss more than two weeks, please
+If extenuating circumstances cause you to miss more than the number of weeks covered by this policy, please
 contact us and we can work something out.
 </p>
 

@@ -1,4 +1,4 @@
-title: Computing for Computer Scientists
+title: Computer Science Pragmatics
 email: ppannuto@umich.edu
 description: > # this means to ignore newlines until "url:"
   This 1-credit seminar is designed to teach the essentials of using a computer
@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "url:"
   environment, scripting, Makefiles, compilers, debugging tools, and version
   control. The last month of the course will be open to student input for
   remaining useful topics to cover.
-url: "https://c4cs.github.io" # the base hostname & protocol for your site
+url: "https://csprag.github.io" # the base hostname & protocol for your site
 
 google_analytics_id: UA-70360310-1
 
@@ -26,6 +26,18 @@ collections:
     output: true
 
 defaults:
+  - scope:
+      path: "_syllabus/f19"
+    values:
+      category: f19
+  - scope:
+      path: "_lectures/f19"
+    values:
+      category: f19
+  - scope:
+      path: "_updates/f19"
+    values:
+      category: f19
   - scope:
       path: "_syllabus/f18"
     values:
