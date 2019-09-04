@@ -227,7 +227,7 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 
 .left-column[
 1. Take a selfie
-2. E-mail [c4cs-photos@umich.edu](mailto:cspadmin+photosf19@umich.edu) with...
+2. E-mail [csprag-admin+photosf19@umich.edu](mailto:csprag-admin+photosf19@umich.edu) with...
    - Your name
    - Your picture
    - One thing you want to get out of this course
@@ -240,7 +240,7 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 ]
 .right-column[
 .padding-lr-40[
-![Selfie of Marcus from this morning](img/selfie.jpg)
+![Selfie of Marcus from this morning](img/mmdselfie.jpg)
 ]
 ]
 
@@ -277,7 +277,8 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 ## This is pretty easy to do with most laptops now
 
 - OS X has it built in
-- [Linux subsystem for Windows](https://msdn.microsoft.com/en-us/commandline/wsl/faq) in the "Windows 10 Anniversary Update"
+- Windows Subsystem for Linux (WSL)
+- "Containers"
 
 ---
 
@@ -317,7 +318,7 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 
 - What is a shell?
 
-- Why learn this stuff in 2017?
+- Why learn this stuff in 2019?
 
 - The critical basics:
 
