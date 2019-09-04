@@ -1,10 +1,10 @@
 ---
-permalink: /lectures/w18/week1.html
+permalink: /lectures/f19/week1.html
 ---
 
 class: center, middle
 
-# EECS 398 :: 001
+# EECS 201
 ## Computing for Computer Scientists
 
 .copyright[
@@ -95,7 +95,7 @@ write a basic "Hello World" program
 
 # Course Resources
 
-## https://c4cs.github.io
+## https://csprag.github.io
 
 - The course homepage. Everything is here or linked from here.
 
@@ -103,27 +103,28 @@ write a basic "Hello World" program
    * Lecture materials
    * Syllabus, schedule, etc
 
-- You can also get here from [canvas](https://umich.instructure.com/courses/192925)
+- You can also get here from [canvas](https://umich.instructure.com/courses/314843)
 
-### [Piazza](https://piazza.com/class/jbuc78hg26ttu)
+### [Piazza](https://piazza.com/umich/fall2019/eecs201)
 
 - Essentially high-latency digital office hours
 
    * All questions _private_ by default
 
-### [Gradescope](https://gradescope.com/courses/13649)
+### [Gradescope](https://gradescope.com/courses/61550)
 
 - Homework submission
 
    * Warning, their clocks are unsympathetic
 
-- Entry code 92R5Z7 <small>(also on course homepage)</small>
+- Entry code MRV3B8 <small>(also on course homepage)</small>
 
 ---
 
 # Course Meeting Time and Location
 
-- **Section 001** AUD CHRYS, Friday 10:00a-11:30a
+- **Section 001** 1670 BBB, Wednesday 1:30p-3:00p
+- **Section 002** 1670 BBB, Friday 1:30p-3:00p
 
 ![Screenshot of Course Calendar](img/calendar.png)
 
@@ -158,7 +159,7 @@ write a basic "Hello World" program
 .column-33[
 **30% Attendance & Participation**
 
-- 12 weeks not counting the first week
+- No attendance in week 1
 - We'll take attendance every week, somehow
 ]
 
@@ -200,9 +201,9 @@ The CSE department has some loaner laptops available for the semester<sup>&dagge
 
 ![Screenshot of Course Staff](img/course_staff.png)
 
-### ^another screenshot of [c4cs.github.io](https://c4cs.github.io/#staff)
+### ^another screenshot of [csprag.github.io](https://csprag.github.io/#staff)
 
-[c4cs]: https://c4cs.github.io
+[csprag]: https://csprag.github.io
 
 
 ---
@@ -226,7 +227,7 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 
 .left-column[
 1. Take a selfie
-2. E-mail [c4cs-photos@umich.edu](mailto:c4cs-photos@umich.edu) with...
+2. E-mail [c4cs-photos@umich.edu](mailto:cspadmin+photosf19@umich.edu) with...
    - Your name
    - Your picture
    - One thing you want to get out of this course
@@ -280,7 +281,7 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 
 ---
 
-# The C4CS Game!!
+# The CSPrag Game!!
 
 --
 
@@ -359,5 +360,5 @@ background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), 
 
 class: center, middle
 
-# Welcome to C4CS
+# Welcome to CSPrag
 ## Looking forward to a great semester!
