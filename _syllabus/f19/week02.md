@@ -1,5 +1,4 @@
 ---
-sectionHeader: 'Segment 1: Introduction and Basics'
 week: 2
 dates: 09/11/2019, 09/13/2019
 lecturer: mmdarden
