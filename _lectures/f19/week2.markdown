@@ -186,6 +186,46 @@ Check out .git/HEAD while we're here
 
 ## [tinyurl.com/csprag-f19-everybody-gits]()
 
+---
+
+name: git-examples
+
+# Other
+
+## Examples of git in IDE/editors
+
+ - [Xcode](#xcode-gallery)
+
+ - [VS Code](#vscode-gallery)
+
+ - [Vim/gVim](#vim-gallery)
+
+--
+
+## Darden's git favorites
+
+ - [Git Golf](https://learngitbranching.js.org)
+
+ - [Git Commit Messages](https://hackernoon.com/git-it-together-some-tips-on-commit-etiquette-and-best-practices-for-junior-developers-1f147b8dfd56)
+
+ - [Pragmatic Guide to Git](https://pragprog.com/book/pg_git/pragmatic-guide-to-git)
+
+---
+
+# Closing remarks
+
+## **You (EECS 201) must use git for something non-trivial this term**
+
+ - You (everyone) _should_ use version control for all your class projects
+
+    - And I don't mean folder-copying
+
+ - Not in any programming classes?
+
+    - Try using it for other homework or a side project!
+
+ - Deadline for this is Week 5 — Git II (February 08)
+
 
 ---
 
@@ -226,4 +266,61 @@ name: git-examples
     - Try using it for other homework or a side project!
 
  - Deadline for this is Week 5 — Git II (February 08)
+
+---
+
+name: xcode-gallery
+count: false
+
+# Git and Xcode
+
+.center[![Git in Xcode](img/git-xcode.png)]
+
+---
+
+count: false
+
+# Git and Xcode
+
+.center[![Xcode Commit Editor](img/git-xcode-commit.png)]
+
+.footer[[Back](#git-examples)]
+
+---
+
+name: vscode-gallery
+count: false
+
+# Git and VS Code
+
+.center[![Git in VS Code](img/git-vscode.png)]
+
+---
+
+count: false
+
+# Git and VS Code
+
+.center[![VS Code Commit Editor](img/git-vscode-commit.png)]
+
+.footer[[Back](#git-examples)]
+
+---
+
+name: vim-gallery
+count: false
+
+# Git and Vim/gVim
+
+.center[![Git in vim](img/git-vim.png)]
+
+---
+
+name: vim-gallery
+
+# Git and Vim/gVim
+
+.center[![Git in GUI vim](img/git-gvim.png)]
+
+.footer[[Back](#git-examples)]
 
