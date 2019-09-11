@@ -108,3 +108,19 @@ Check out .git/HEAD while we're here
 
  - Add any external references (eg. Fixes issue #42)
 
+---
+
+# Using git locally
+
+ - What is a commit?
+
+ - Working Tree, Staging Area, Repository
+
+ - Moving around the triangle
+--
+
+<hr />
+
+.center[
+![Diagram of git operations](img/git_triangle-local.svg)
+]
