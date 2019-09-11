@@ -18,3 +18,93 @@ class: center, middle
 ## Why is it important?
 
 ## ...and how might we build a version control system?
+
+---
+
+# The Last Pun You'll Git
+
+---
+
+# Git Basics
+
+## The Top 5
+
+ - `git init`
+
+ - `git status`
+
+ - `git add` and `git commit`
+
+ - `git log`
+
+--
+
+## Let's peek under the hood
+
+ - History is a linked list
+
+ - What's `master`, `HEAD`?
+
+ - Where's the old versions?
+
+???
+
+## I'm lazy, let's make `git st` == `git status`
+
+ - `git config --global --edit`
+.small-75[
+ - (Fancy way of saying `editor ~/.gitconfig`)
+
+ - (Fancy way of saying `editor /home/ppannuto/.gitconfig`)
+
+ - (Fancy way of saying `[nano/vim/emacs/...] /home/ppannuto/.gitconfig`)
+]
+
+```
+[alias]
+  st = status
+```
+
+???
+
+master is a branch like any other, and just a name _nothing special to git_
+                                                  _special to users by convention_
+
+HEAD is an alias for what is currently "checked out", the files that you
+see on disk at this moment
+
+where are the others?
+   - .git/objects
+
+Check out .git/HEAD while we're here
+
+---
+
+# A good commit message
+
+## Use an editor!
+
+## Take your time
+
+--
+
+## The "Title"
+
+ - 50 chars or less
+
+ - Starts like a sentence but doesn't end like one
+
+ - Imperative!
+
+--
+
+## The "Body"
+
+ - 72 chars or less per line
+
+ - What and why
+
+ - NEVER how (that's what the code is for)
+
+ - Add any external references (eg. Fixes issue #42)
+
