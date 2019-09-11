@@ -124,3 +124,82 @@ Check out .git/HEAD while we're here
 .center[
 ![Diagram of git operations](img/git_triangle-local.svg)
 ]
+
+---
+
+# Using git locally
+
+ - What is a commit?
+
+ - Working Directory, Staging Area, Repository
+
+ - Moving around the triangle
+--
+
+<hr />
+
+.center[
+![Diagram of git operations](img/git_triangle-local.svg)
+]
+
+---
+
+# Slow down!
+
+## Git help
+
+ - `man git` (the stupid content tracker)
+
+ - `git help <command>` or `man git-<command>`
+
+ - `man gittutorial`
+
+ - `man giteveryday`
+
+ - The Internets
+--
+
+## Some git "tools"
+
+ - `git config`
+
+ - `git diff`
+
+ - `git stash`
+
+ - `git show`
+
+ - `git blame`
+
+---
+
+# Collaborating with git
+
+## Git remotes
+
+ - `git remote`
+
+ - `git clone`
+
+--
+
+<hr />
+
+![Diagram of git operations with remote server](img/git_triangle.svg)
+
+---
+
+# To and from the "Cloud"
+
+ - `git push`, `git fetch`
+
+ - `git merge`
+
+ - `git pull`
+
+---
+
+# Attendance
+
+## [tinyurl.com/csprag-f19-everybody-gits]()
+
