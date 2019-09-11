@@ -224,48 +224,7 @@ name: git-examples
 
     - Try using it for other homework or a side project!
 
- - Deadline for this is Week 5 — Git II (February 08)
-
-
----
-
-name: git-examples
-
-# Other
-
-## Examples of git in IDE/editors
-
- - [Xcode](#xcode-gallery)
-
- - [VS Code](#vscode-gallery)
-
- - [Vim/gVim](#vim-gallery)
-
---
-
-## Darden's git favorites
-
- - [Git Golf](https://learngitbranching.js.org)
-
- - [Git Commit Messages](https://hackernoon.com/git-it-together-some-tips-on-commit-etiquette-and-best-practices-for-junior-developers-1f147b8dfd56)
-
- - [Pragmatic Guide to Git](https://pragprog.com/book/pg_git/pragmatic-guide-to-git)
-
----
-
-# Closing remarks
-
-## **You (EECS 201) must use git for something non-trivial this term**
-
- - You (everyone) _should_ use version control for all your class projects
-
-    - And I don't mean folder-copying
-
- - Not in any programming classes?
-
-    - Try using it for other homework or a side project!
-
- - Deadline for this is Week 5 — Git II (February 08)
+ - Deadline for this is Week 5 — Git II (October 02 + 04)
 
 ---
 
