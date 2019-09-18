@@ -4,9 +4,9 @@ week: 3
 dates: 09/18/2019, 09/20/2019
 lecturer: mmdarden
 slidesName: f19/week3
-#homeworkRelease: 2018-09-21 00:00:00
-#lectureRelease: 2018-09-21 00:00:00
-#advancedRelease: 2018-09-21 00:00:00
+homeworkRelease: 2018-09-21 00:00:00
+lectureRelease: 2018-09-21 00:00:00
+advancedRelease: 2018-09-21 00:00:00
 #solutionRelease: 2018-10-04 00:00:00
 title: "Shells, Environment, Scripting, and Bash"
 lectureTopics:
