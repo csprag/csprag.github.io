@@ -26,5 +26,6 @@ commands:
   - rm
   - touch
 lectureSummary: Syllabus week! Don't expect anything too deep here. Just an easy introduction to the C4CS curriculum.
-# leccapFri: 
+leccapWed: nW7vvf
+leccapFri: 1xJO0H
 ---
