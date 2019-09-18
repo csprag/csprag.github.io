@@ -4,362 +4,227 @@ permalink: /lectures/f19/week3.html
 
 class: center, middle
 
-# EECS 201
-## Computing for Computer Scientists
+# Shells, Environment, Scripting, and Bash
+## (in 80 minutes[!])
 
 .copyright[
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 ** [Pat Pannuto](http://patpannuto.com) / Marcus Darden **
 ]
 
----
-
-# What this class is about
 
 ---
 
-# What this class is about
 
-- This is not "Tools for Computer Scientists"
+# Q: How does a program start?
 
-- Though, we will cover a lot of cool tools
+???
 
-- The goal is to give you the ability to pick up, learn, and use tools effectively
-
-- The goal is not to completely teach you any tool (they made the internets for that!)
-
----
-
-# This class is _NOT_ a set of tutorials
-
-.left-column[
-1. Log in to a CAEN machine in Linux
-2. Press the "windows" key to open the application launcher and then type "gedit"
-3. Now copy-paste the following block of code into the window:
-    ```c
-    #include <stdio.h>
-    int main() { printf("Hello World\n"); return 0; }
-    ```
-4. Type "Ctrl-s" or click the "save" icon, save the file as "myprogram.c" in your home directory.
-5. Press the "windows" key again and type "terminal"
-6. In the window that appears, type "gcc myprogram.c -o myprogram"
-7. Now type "./myprogram"
-]
-.right-column[
-1. Open your favorite text editor and
-write a basic "Hello World" program
-2. Compile and run your program
-]
-
----
-
-# Lectures give you the "what" and the "why", homeworks are a self-guided tour on the "how"
-
-- Lectures are designed to be interactive
-
-- Lots of live coding, lots of mistakes!
-
-- **Bring your laptop to every class**
-
----
-
-# This is a very individual class
-
-## Nothing in this class is hard...
+Lots of answers to this
+ - "double click" something
+ - spotlight something (or magic ubuntu menu that's the same)
+ - type it into a terminal
 
 --
 
-## The second time you do it
-
-![GPS Unit](img/gps.jpg)
-
----
-
-# Collaboration
-
-## Less than you're used to
-
-- The goal is to build your _individual_ skills
-
-- You will get the most benefit doing assignments on your own
-
-## "The 15 Minute Rule"
-
-- A little frustration is a good thing, a lot is a bad thing
-
-   * Try to solve a problem on your own for 15 minutes before asking for help
-   * After 15 minutes, ask for help!
-   * Good rule of thumb outside of this class too
-
----
-
-# Course Resources
-
-## https://csprag.github.io
-
-- The course homepage. Everything is here or linked from here.
-
-   * Homework assignments
-   * Lecture materials
-   * Syllabus, schedule, etc
-
-- You can also get here from [canvas](https://umich.instructure.com/courses/314843)
-
-### [Piazza](https://piazza.com/umich/fall2019/eecs201)
-
-- Essentially high-latency digital office hours
-
-   * All questions _private_ by default
-
-### [Gradescope](https://gradescope.com/courses/61550)
-
-- Homework submission
-
-   * Warning, their clocks are unsympathetic
-
-- Entry code MRV3B8 <small>(also on course homepage)</small>
-
----
-
-# Course Meeting Time and Location
-
-- **Section 001** 1670 BBB, Wednesday 1:30p-3:00p
-- **Section 002** 1670 BBB, Friday 1:30p-3:00p
-
-![Screenshot of Course Calendar](img/calendar.png)
-
-<!-- Cute idea, but only works if this page is visible on load :(
-<div id='calendar-loading'>Loading calendar...</div>
-<div id='calendar'></div>
-<a href="https://calendar.google.com/calendar/embed?src=4a0vvtkg11f6g0qs2er37gkkf8%40group.calendar.google.com&ctz=America/New_York" class="pull-right" target="_blank">Google Calendar link</a>
--->
-
----
-
-# Work and Expectations
-
-## This is a 1-credit course
-
-- 1 credit = 4 hours of your life / week
-
-   * 1.5 hours in lecture
-   * 1.5 hours of homework
-   * 3 times this semester: 2-3 hours of "advanced exercises"
-
-## Grading
-
-.column-33[
-**40% Homework**
-
-- One homework every week except the last week
-- (Yes there is homework this week)
-- Due the last minute of the second Wednesday after class
-]
-
-.column-33[
-**30% Attendance & Participation**
-
-- No attendance in week 1
-- We'll take attendance every week, somehow
-]
-
-.column-33[
-**30% Advanced Exercises**
-
-- Explore a topic in more depth
-- Due the second Wednesday after class
-- _Must be turned in at office hours_
-]
-
----
-
-# You need will need your own computer for this class
-
-### CAEN machines are **NOT** sufficient for this class
-
-### If you don't have your own computer...
-
-- Dog ate it
-- TSA confiscated it on your flight to Michigan
-- Drunk roommate confused it for a frisbee
-
-The CSE department has some loaner laptops available for the semester<sup>&dagger;</sup>
-
-- Contact Don Winsor: <a href="mailto:don@umich.edu">don@umich.edu</a>
-
-.footnote[
-<sup>&dagger;</sup>For people with genuine need, please don't abuse this
-]
-
----
-
-# Course staff
-
-<!-- again, cute idea, again only works if visible on load :(
-<iframe width="100%" height="350px" src="/#syllabus"></iframe>
--->
-
-![Screenshot of Course Staff](img/course_staff.png)
-
-### ^another screenshot of [csprag.github.io](https://csprag.github.io/#staff)
-
-[csprag]: https://csprag.github.io
-
-
----
-
-<div style="display: flex;">
-<div style="margin: auto;">
-.center-center[
-# Administrivia
-]
-</div>
-</div>
-
----
-
-class: full-dark-image
-background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url(img/breathe.gif)
-
-# Take A Break
-
-### &nbsp;
-
-.left-column[
-1. Take a selfie
-2. E-mail [csprag-admin+photosf19@umich.edu](mailto:csprag-admin+photosf19@umich.edu) with...
-   - Your name
-   - Your picture
-   - One thing you want to get out of this course
-   - Anything else you want us to know about you
-      - Preferred nickname
-      - Special considerations
-      - Awesome trivia
-3. Meet a stranger
-   - Preferably not the person right or left, maybe turn around behind you?
-]
-.right-column[
-.padding-lr-40[
-![Selfie of Marcus from this morning](img/mmdselfie.jpg)
-]
-]
-
-.footnote[
-.opacity-25[
-<small><em>Photo credit Apple Computer, Inc.</em></small>
-]
-]
-
-
----
-
-<div style="display: flex;">
-<div style="margin: auto;">
-.center-center[
-# `<class>`
-]
-</div>
-</div>
-
----
-
-# Straw Poll: Who has Linux on their laptop?
+## The jobs of a _shell_
+
+ - Spawn (launch) new programs
+ - Handle input and output to programs
+ - Kill and clean up old programs
 
 --
 
-## Having something Unix-like on your machine will make your CS life at Michigan much more pleasant
+### What shells have you used?
 
-- This not because Unix is "better"
-- This does not mean you cannot use Windows
+???
 
---
+ - All the text ones: bash, csh, zsh, fish, (I'm sure there are more)
+ - KEY POINT: The desktop is also a "shell", it does all these jobs!
+              Indeed, the desktop in Gnome is called the "unity shell"
 
-## This is pretty easy to do with most laptops now
 
-- OS X has it built in
-- Windows Subsystem for Linux (WSL)
-- "Containers"
+
 
 ---
 
-# The CSPrag Game!!
+# Let's poke around how the [Desktop] shell works
+
+```bash
+$ cp /usr/share/applications/firefox.desktop ~/Desktop/
+$ chmod +x ~/Desktop/firefox.desktop
+```
 
 --
 
-## Round 1: The Forearm Check
+## What makes `firefox.desktop` work?
+
+???
+
+ - Change "Name=..."
+ - What's the point of Name[ar] and friends?
+ - What might "Keywords=..." do?
+ --> click ubuntu icon in top corner, try typing each keyword, what's first?
+ --> can't change this as easily, doesn't read from files on ~/Desktop/
+ - What about this "Exec=..."
+ --> Exec=gnome-calculator
 
 --
 
-## Round 2a: What is a computer, really?
+## How does the [desktop] shell:
 
---
+ - Spawn (launch) new programs
+ - Handle input and output to programs
+ - Kill and clean up old programs
 
-## Round 2b: What makes up a computer?
 
---
 
-## What is a "Virtual Machine?"
-
---
-
-### Also a safe playground for you to explore
-
-### Also a common platform for teaching
-
-# &nbsp;
-
---
-
-## For HW1, you'll install a VM to use this semester
 
 ---
 
-# Live exercises in a Unix environment
+# Let's poke around how the [bash] shell works
 
-- What is a shell?
+```bash
+$ firefox
+<Ctrl-C>
+$ firefox &
+$ jobs
+$ fg
+<Ctrl-Z>
+$ bg
 
-- Why learn this stuff in 2019?
+$ echo "hello" > test
+$ cat test
 
-- The critical basics:
-
-   - Where am I?
-
-   - What is nearby?
-
-- What commands have you seen before?
-
+$ true && echo "hello"
+$ false && echo "nope" || echo "whaaaat?"
+```
 --
 
-.left-column[
-- cat
-- cd
-- chmod/chown/chgrp
-- clear
-- cp
-- diff
-- echo
-- fg/bg/jobs [ctrl-z]
-- grep
-- help
-- kill
-]
-.right-column[
-- ls
-- man
-- mkdir
-- mv
-- pwd
-- rm
-- sleep
-- tail
-- touch
-- true
-- whoami
-]
+## How does the [bash] shell:
+
+ - Spawn (launch) new programs
+ - Handle input and output to programs
+ - Kill and clean up old programs
+
+
+
 
 ---
 
-class: center, middle
+# Where's `firefox` anyway?
 
-# Welcome to CSPrag
-## Looking forward to a great semester!
+```bash
+$ firefox              # This works
+$ gcc hello.c -o hello # This works
+$ hello                # This doesn't
+$ ./hello              # This works
+```
+
+## Your _environment_ affects program behavior
+
+  - Even shells! (they're a program too)
+
+
+
+---
+
+# Changing the environment will change program behavior
+
+  - In this case, how a shell performs the search for programs
+```bash
+$ PATH=$PATH:/home/username/    # Assuming "hello" is in this folder
+$ hello                         # Now this works!
+$ PATH=/home/username           # What if you'd done this instead?
+```
+  - Also saw a brief example of environment variables in last week's homework
+
+
+---
+
+# Your programs can use the environment too
+
+```c++
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[], char *envp[]) {
+  cout << "argc: " << argc << endl;
+  cout << "envp[0]: " << envp[0] << endl;
+  // while (*envp++) {  // Try this one, too!
+  //     cout << *envp << endl;
+  // }
+  return 0;
+}
+```
+
+```bash
+$ ./a.out
+$ HELLO=world ./a.out
+$ lower=fine many=okaytoo ./a.out
+$ export IamPermanent=ish
+$ ./a.out
+$ # Try uncommenting the while loop, did you find the missing ones?
+$ ./a.out | less      # This may explain some of the funny colors
+```
+
+---
+
+# Now what about _scripting_?
+
+--
+
+## Surprise! You've been scripting this whole time!
+
+ - Typing commands into the bash shell and running a bash script are _the same_
+```bash
+$ cat test.sh
+echo "hello" > test
+cat test
+true && echo "hello"
+false && echo "nope" || echo "whaaaat?"
+$ chmod +x test.sh # What is this doing?
+$ ./test.sh
+```
+
+--
+
+ - How to write a bash script?
+
+    - Try things out in the terminal
+    - Copy things that work into a file ($ history)
+    - Run that file
+    - Repeat
+
+
+
+---
+
+# Bash is old...
+
+## But useful, especially for really short things
+
+## But has ugly and finicky syntax
+
+ - `VARIABLE=test` != `VARIABLE = test` :(
+
+## But running programs is really easy
+
+  - (it's what it was built for after all)
+  - `g++ -O3 -m32 thread.o libinterrupt.a test1.cpp -ldl -o test1`
+  - `./test1`
+
+## But doing much more is tricky
+
+  - Validate program output (`diff`?), what if it varies?
+  - Rule of thumb: More than 50-100 lines, more than a shell script
+
+
+
+---
+
+# Closing remarks
+
+- **Try one of the Advanced Exercises**
+
+- We're at the end of Segment 1
+- Reminder: You must submit to staff at OH
