@@ -1,6 +1,6 @@
 ---
 sectionHeader:
-week: 13
+week: 12
 dates: 11/20/2019, 11/22/2019
 lecturer: mmdarden
 slidesName: f18/week13
