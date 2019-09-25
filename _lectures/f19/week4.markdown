@@ -1,6 +1,5 @@
-layout: true
-.slide-footer[Questions? [Ask us!](/submit_question)]
-
+---
+permalink: /lectures/f19/week4.html
 ---
 
 class: center, middle

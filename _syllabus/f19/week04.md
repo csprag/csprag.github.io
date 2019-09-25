@@ -3,7 +3,7 @@ sectionHeader: 'Being Efficient'
 week: 4
 dates: 09/24/2019, 09/27/2019
 lecturer: mmdarden
-slidesName: f18/week4
+slidesName: f19/week4
 homeworkRelease: 2018-09-26 00:00:00
 lectureRelease: 2018-09-26 00:00:00
 advancedRelease: 2018-09-26 00:00:00
