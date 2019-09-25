@@ -33,6 +33,6 @@ commands:
   - history
   - grep
 lectureSummary:
-#leccapBBB: QbBq0v
-#leccapDOW: KqzZXX
+leccapWed: nvvsLH
+#leccapFri: ______
 ---
