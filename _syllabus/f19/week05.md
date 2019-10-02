@@ -3,7 +3,7 @@ sectionHeader:
 week: 5
 dates: 10/02/2019, 10/04/2019
 lecturer: mmdarden
-slidesName: f18/week5
+slidesName: f19/week5
 homeworkRelease: 2019-10-01 00:00:00
 #lectureRelease: 2018-10-04 00:00:00
 advancedRelease: 2019-10-01 00:00:00
