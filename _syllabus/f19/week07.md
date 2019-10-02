@@ -1,7 +1,7 @@
 ---
 sectionHeader: 'Developing'
 week: 7
-dates: 10/16/2018, 10/19/2019
+dates: 10/16/2018, 10/18/2019
 lecturer: mmdarden
 slidesName: f18/week7
 #homeworkRelease: 2018-10-19 00:00:00
